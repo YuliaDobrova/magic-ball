@@ -1,0 +1,188 @@
+body {
+  /*
+   * FIXME:
+   * Give this page a background color!
+   */
+  /* background-color: #60c1e5; */
+  background-color: aquamarine;
+
+  /*
+   * FIXME:
+   * Center this heading!
+   */
+  text-align: center;
+
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+p {
+  margin: 0;
+}
+.question {
+  font-size: 24px;
+}
+/* 
+ * NOTE: 
+ * these lines of CSS will let our 8-ball hold its shape 
+ */
+div.eight-ball,
+div.answer {
+  border: 1px solid transparent;
+}
+
+/* The outside circle! */
+div.eight-ball {
+  /*
+   * FIXME:
+   * Let's give the eight ball a background color!
+   */
+  background-color: black;
+
+  /*
+   * FIXME:
+   * Let's use border-radius to make the div round!
+   */
+  border-radius: 50%;
+
+  /*
+   * FIXME:
+   * Let's give this eight ball and width and height of 
+   * 300 pixels.
+   */
+  width: 300px;
+  height: 300px;
+
+  /* "Center the 8 ball so it's the center of the screen */
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* The inside circle! */
+div.answer {
+  background-color: #333;
+
+  /*
+   * FIXME:
+   * Let's use border-radius to make the div round!
+   */
+  border-radius: 50%;
+
+  /*
+   * FIXME:
+   * make me 50% wide and 50% high as the outside ball!
+   */
+  width: 50%;
+  height: 50%;
+
+  /*
+   * FIXME:
+   * Place me in the middle of the outside ball!
+   */
+  margin: 25%;
+}
+
+p#eight {
+  /*
+   * FIXME:
+   * Make our "8" large enough; let's try 5rems.
+   */
+  font-size: 5rem;
+
+  margin: 20% auto;
+  color: white;
+}
+
+/*
+ * FIXME:
+ * We'll design the messages. Let's make these 
+ * messages "lightblue".
+ */
+p#answer {
+  /* color: lightblue; */
+  /* color: teal; */
+  color: white;
+  text-shadow: 3px 3px 4px teal;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+button,
+input {
+  /* 
+   * FIXME:
+   * Let's give the margin and padding of all buttons
+   * and text boxes a margin of 20 pixels, and a padding 
+   * of 10 pixels.
+   */
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: text;
+  font-size: 1.2em;
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+/* 
+   * FIXME:
+   * Let's make the button animate!
+   */
+
+button {
+  transition: 0.5s font-size;
+  cursor: pointer;
+  width: 150px;
+  font-weight: 400;
+  text-shadow: 3px 3px 4px teal;
+  text-transform: uppercase;
+}
+
+/*
+ * FIXME:
+ * modify me so words get larger when I HOVER over a button
+ */
+
+button:hover {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: gray;
+  color: white;
+}
+
+.running-string {
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: color 0.5s ease-in-out;
+  animation-name: changeRunColor;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeRunColor {
+  0% {
+    color: black;
+    text-shadow: transparent;
+  }
+
+  50% {
+    color: teal;
+    text-shadow: white;
+  }
+
+  100% {
+    color: black;
+    text-shadow: transparent;
+  }
+}
