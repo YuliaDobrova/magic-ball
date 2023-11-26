@@ -4,28 +4,38 @@ body {
    * Give this page a background color!
    */
   /* background-color: #60c1e5; */
-  background-color: aquamarine;
-
-  /*
-   * FIXME:
-   * Center this heading!
-   */
+  /* background-color: aquamarine; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("./blue-galaxy.jpg");
   text-align: center;
-
   font-family: "Helvetica Neue", arial;
   font-weight: 100;
 }
 
+/* .layer {
+  background-color: rgba(248, 247, 216, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
 h1 {
   font-weight: 900;
   font-size: 3em;
+  color: white;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
 }
 
 p {
   margin: 0;
 }
 .question {
+  color: white;
   font-size: 24px;
+  font-weight: 300;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
 }
 /* 
  * NOTE: 
@@ -107,7 +117,9 @@ p#answer {
   /* color: lightblue; */
   /* color: teal; */
   color: white;
-  text-shadow: 3px 3px 4px teal;
+  /* text-shadow: 3px 3px 4px teal; */
+  text-shadow: 1px 1px 2px teal, 0 0 1em aquamarine, 0 0 0.2em #60c1e5;
+
   padding: 20px;
   letter-spacing: 2px;
 }
@@ -141,7 +153,8 @@ button {
   cursor: pointer;
   width: 150px;
   font-weight: 400;
-  text-shadow: 3px 3px 4px teal;
+  text-shadow: 1px 1px 2px teal, 0 0 1em aquamarine, 0 0 0.2em #60c1e5;
+  /* text-shadow: 3px 3px 4px teal; */
   text-transform: uppercase;
 }
 
@@ -151,9 +164,8 @@ button {
  */
 
 button:hover {
-  font-size: 20px;
   font-weight: 700;
-  background-color: gray;
+  background-color: teal;
   color: white;
 }
 
@@ -162,6 +174,8 @@ button:hover {
   font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
+
   transition: color 0.5s ease-in-out;
   animation-name: changeRunColor;
   animation-duration: 2000ms;
@@ -172,17 +186,23 @@ button:hover {
 
 @keyframes changeRunColor {
   0% {
+    padding-top: 0px;
     color: black;
     text-shadow: transparent;
+    font-size: 16px;
   }
 
   50% {
+    padding-top: 5px;
     color: teal;
     text-shadow: white;
+    font-size: 18px;
   }
 
   100% {
+    padding-top: 0px;
     color: black;
     text-shadow: transparent;
+    font-size: 16px;
   }
 }

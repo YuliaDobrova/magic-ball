@@ -1,3 +1,3 @@
 # magic-ball
 
-A project practiced on the Web Development Intro Day
+Project created as part of Web Development Day at BrainStation (Vancouver).
